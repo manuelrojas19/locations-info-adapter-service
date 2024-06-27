@@ -1,0 +1,31 @@
+version: "3"
+services:
+  mongo:
+    image: mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    command:
+      - "--tlsMode"
+      - "requireTLS"
+      - "--tlsDisabledProtocols"
+      - "none"
+      - "--tlsCertificateKeyFile"
+      - "/etc/mongodb/ssl/mongo.pem"
+      - "--tlsCAFile"
+      - "/etc/mongodb/ssl/mongoCA.crt"
+    volumes:
+      - './mongo_data:/data/db'
+      - "./mongo-ssl/config/mongod.conf:/etc/mongod.conf"
+      - "./mongo-ssl/cert/:/etc/mongodb/ssl/"
+      - './docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d/:ro'
+    environment:
+      MONGO_INITDB_DATABASE: atm_data_db
+    networks:
+      - bank-api-network
+volumes:
+  mongo_data:
+    driver: local
+
+networks:
+  bank-api-network:

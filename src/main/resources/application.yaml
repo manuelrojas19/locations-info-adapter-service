@@ -1,0 +1,15 @@
+application:
+  apis:
+    base-path: /api/v2
+    find-banks-path: /banks
+    health-check-path: /info
+  information:
+    host: localhost
+  env: localDev
+spring:
+  cache:
+    type: redis
+  application:
+    name: bank-api
+server:
+  port: 8089

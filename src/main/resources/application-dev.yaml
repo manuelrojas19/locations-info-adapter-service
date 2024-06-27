@@ -1,0 +1,27 @@
+application:
+  features:
+    redis-cache: false
+  env: dev
+spring:
+  data:
+    mongodb:
+      database: ${MONGO_DATABASE}
+      uri: ${MONGO_HOST}
+      username: ${MONGO_USERNAME}
+      password: ${MONGO_PASSWORD}
+      keystore:
+        path: ${KEYSTORE_PATH}
+        fileName: ${KEYSTORE_FILENAME}
+        base64: ${KEYSTORE_BASE64_SECRET}
+        password: ${KEYSTORE_PASSWORD_SECRET}
+    redis:
+      cluster:
+        master:
+          endpoint: ${REDIS_HOST}
+      password: ${REDIS_PASSWORD_SECRET}
+
+
+
+
+
+

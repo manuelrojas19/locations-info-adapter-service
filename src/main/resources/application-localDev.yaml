@@ -1,0 +1,27 @@
+application:
+  features:
+    redis-cache: false
+  env: localDev
+spring:
+  data:
+    mongodb:
+      database: atm_data_db
+      uri: mongodb://localhost:27017
+      username: ""
+      password: ""
+      keystore:
+        path: ./keystore/
+        fileName: mongo.jks
+        base64: ${KEYSTORE_BASE64_SECRET}
+        password: ${KEYSTORE_PASSWORD_SECRET}
+    redis:
+      cluster:
+        master:
+          endpoint: localhost:6379
+      password: password
+
+
+
+
+
+
