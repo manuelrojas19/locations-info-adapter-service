@@ -16,4 +16,4 @@ This project is a sample application built with Spring Boot 3.2.x that provides 
 - [Maven 3.6.0 or higher](https://maven.apache.org/download.cgi)
 - [Docker](https://www.docker.com/get-started)
 - [Docker Compose](https://docs.docker.com/compose/install/)
-- SSL certificates and keys: .pem, .CA, and .JKS files (You can refer to this documentation (https://github.com/manuelrojas19/aws-infra-k8s-mongo/blob/main/docs/certificates.md) to generate the required certificates)
+- SSL certificates and keys: .pem, .crt, and .jks files (You can refer to this documentation (https://github.com/manuelrojas19/aws-infra-k8s-mongo/blob/main/docs/certificates.md) to generate the required certificates)
