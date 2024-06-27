@@ -38,7 +38,7 @@ build/
 ### Docker Compose Certificates ###
 deploy/mongo-ssl/cert/mongo.pem
 deploy/mongo-ssl/cert/mongoCA.crt
-keystore/mongo.jks
+certificates/mongo.jks
 
 ### Jib Path ###
 src/main/jib/mongoCA.crt
