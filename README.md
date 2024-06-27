@@ -6,8 +6,6 @@ This project is a sample application built with Spring Boot 3.2.x that provides 
 ## Purpose
 This application serves for an educational purpose to understand SSL functionality and its configuration for a data source within a Java application.
 
-Feel free to incorporate this description into your project's documentation or README. If you need further assistance or modifications, let me know!
-
 ## Features
 
 - Retrieves location information from a MongoDB database.
