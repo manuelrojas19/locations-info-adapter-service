@@ -52,8 +52,7 @@ keytool -import \
 
 ### 3. Prepare SSL Certificates
 
-Create a certificates directory in the root of your project and place your SSL certificates and keys (.pem, .CA, .JKS files) inside this directory. See this [documentation](https://github.com/manuelrojas19/aws-infra-k8s-mongo/blob/main/docs/certificates.md) in case you do not have it.
-
+Create a certificates directory in the root of your project and place your SSL certificates and keys (.pem, .CA, .JKS files) inside this directory.
 ```bash
 mkdir certificates
 cd certificates
