@@ -42,3 +42,6 @@ keystore/mongo.jks
 
 ### Jib Path ###
 src/main/jib/mongoCA.crt
+
+### Generated mongo data ###
+deploy/mongo_data
