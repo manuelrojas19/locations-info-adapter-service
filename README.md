@@ -1,6 +1,12 @@
 # locations-info-adapter-service
 
-This project is a sample application built with Spring Boot 3.2.x that provides information about locations stored in a MongoDB database. The API uses Spring WebFlux for reactive request handling and is configured to run in a Docker container using Docker Compose. The connection to the database is secured with SSL, and Jib is used for Docker image creation.
+## Project Overview
+This project is a sample application built with Spring Boot 3.2.x that provides information about locations stored in a MongoDB database. The API utilizes Spring WebFlux for reactive request handling and is configured to run in a Docker container using Docker Compose. The connection to the MongoDB database is secured with SSL, demonstrating secure communication setup. Additionally, Jib is employed for streamlined Docker image creation.
+
+## Purpose
+This application serves for an educational purpose to understand SSL functionality and its configuration for a data source within a Java application.
+
+Feel free to incorporate this description into your project's documentation or README. If you need further assistance or modifications, let me know!
 
 ## Features
 
@@ -36,7 +42,7 @@ This project requires a JKS certificate. You can generate it from your .crt file
 keytool -import -file mongoCA.crt -keystore mongo.jks -storepass <your_truststore_password>
 ```
 
-If you need more detailed instructions or don't have the required certificates, refer to the certificates [documentation](https://github.com/manuelrojas19/aws-infra-k8s-mongo/blob/main/docs/certificates.md) for this project on requirements section.
+If you need more detailed instructions or don't have the required certificates, refer to the certificates [documentation](https://github.com/manuelrojas19/aws-infra-k8s-mongo/blob/main/docs/certificates.md).
 
 Once generated, you need to add the root certificate to your system's trusted certificates store. On Linux or macOS, you can typically add it to the Java keystore (cacerts) located in your Java installation's lib/security directory:
 
@@ -68,7 +74,7 @@ cp mongo.CA ../deploy/mongo-ssl/cert
 cp mongo.CA src/main/jib
 ```
 
-If you need more detailed instructions or don't have the required certificates, refer to the certificates [documentation](https://github.com/manuelrojas19/aws-infra-k8s-mongo/blob/main/docs/certificates.md) for this project on requirements section.
+If you need more detailed instructions or don't have the required certificates, refer to the certificates [documentation](https://github.com/manuelrojas19/aws-infra-k8s-mongo/blob/main/docs/certificates.md).
 
 
 ### 4. Run Docker Compose
